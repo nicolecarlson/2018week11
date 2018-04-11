@@ -60,7 +60,7 @@ glimpse(people)
 
 # Convert factors to numeric - the packages just seem to work better that way
 people$Gender <- as.numeric(people$Gender)
-people$Diabetes <- as.numeric(people$Gender)
+people$Diabetes <- as.numeric(people$Diabetes)
 people$HHIncome <- as.numeric(people$HHIncome)
 people$PhysActive <- as.numeric(people$PhysActive)
 
