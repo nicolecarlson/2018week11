@@ -223,23 +223,6 @@ length(pred_forest)
 
 
 
-```{r}
-
-#Finally let's see what the ensemble of methods looks like, if we can get it to work:
-
-#Diabetes_ensemble <- ifelse((pred_knn =="Yes") +
-#                           (pred_tree == "Yes") +
-#                           (pred_forest == "Yes") >= 2, "Yes", "No")
-
-#class(Diabete_ensemble)
-
-# Create the confusion matrix
-
-#confusion_ensemble <- tally(Diabetes_ensemble~Diabetes, data=people, format="count")
-#confusion_ensemble
-#sum(diag(confusion_ensemble))/nrow(people$Diabetes)
-
-```
 
 
 All of the work that we have done with trees and forests is all fine and good except that it assumes that your division is linear. So what do you do if your data look like this graph brazenly borrowed from Gareth James?
