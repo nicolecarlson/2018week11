@@ -124,7 +124,7 @@ So which classifier should you choose? Well, the good news is that you don't hav
 # Create the grid
 
 ages <- range(~ Age, data = people)
-bmis <- range(~ Age, data = people)
+bmis <- range(~ BMI, data = people)
 res <- 100
 fake_grid <- expand.grid(
   Age = seq(from = ages[1], to = ages[2], length.out = res),
@@ -221,13 +221,15 @@ length(pred_forest)
 
 ```
 
-Finally let's see what the ensemble of methods looks like, if we can get it to work:
+
 
 ```{r}
 
-Diabetes_ensemble <- ifelse((pred_knn =="Yes") +
-                           (pred_tree == "Yes") +
-                           (pred_forest == "Yes") >= 2, "Yes", "No")
+#Finally let's see what the ensemble of methods looks like, if we can get it to work:
+
+#Diabetes_ensemble <- ifelse((pred_knn =="Yes") +
+#                           (pred_tree == "Yes") +
+#                           (pred_forest == "Yes") >= 2, "Yes", "No")
 
 #class(Diabete_ensemble)
 
