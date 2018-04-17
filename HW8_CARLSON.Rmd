@@ -112,5 +112,5 @@ table(knn.3, people$SleepTrouble)
 table(knn.5, people$SleepTrouble)
 table(knn.20, people$SleepTrouble)
 ```
-
+Github for this HW at: https://github.com/nicolecarlson/2018week11
 
